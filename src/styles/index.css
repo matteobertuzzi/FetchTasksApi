@@ -2,6 +2,8 @@
     margin:25%;
     border-style: none;
     border-radius: 5%;
+    border-color: #E9DCC9;
+    border-style: solid;
 }
 
 h2{
@@ -11,13 +13,39 @@ h2{
 }
 .item{
     background: #FAF9F6;
-    width:40rem;
-    height: 80px;
+    height: 60px;
     width: 500px;
+    font-size: 18px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-style: none;
 }
-.task{
+#tasks{
     background: #FAF9F6;
-    width:40rem;
-    height: 80px;
-    width: 500px;
+}
+#tasks > div{
+    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+#counter{
+    font-weight: 200;
+    font-style: italic;
+    color: grey;
+}
+#delete{
+    margin-left: 70%;
+}
+.fa-regular, .far {
+    font-weight: 400;
+    color: #b51a00;
+}
+.counter{
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-style: none;
+    height: 40px;
 }
