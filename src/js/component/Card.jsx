@@ -24,6 +24,7 @@ function handleEvent(e){
 
 function deleteDiv(index){
     document.getElementById(index).remove();
+    setCount(prevCount => prevCount -1);
 }
 
 
