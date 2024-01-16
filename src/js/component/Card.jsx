@@ -22,8 +22,8 @@ function handleEvent(e){
     setTask(e.target.value);
 }
 
-function deleteDiv(item){
-    document.getElementById(item).remove();
+function deleteDiv(index){
+    document.getElementById(index).remove();
 }
 
 
@@ -35,12 +35,12 @@ function deleteDiv(item){
             </form>
             <div>
             <div id="tasks">
-                {list.map((item)=>{
+                {list.map((item, index)=>{
                     return(
-                    <div className="mt-1 mx-4" id={item}>
+                    <div className="mt-1 mx-4" id={index}>
                         <i className="fa-solid fa-thumbtack mx-3"></i>
                         {item}
-                        <i className="fa-regular fa-trash-can" id="delete" onClick={()=>deleteDiv(item)}></i>
+                        <i className="fa-regular fa-trash-can" id="delete" onClick={()=>deleteDiv(index)}></i>
                     </div>
                     )
                 })}
