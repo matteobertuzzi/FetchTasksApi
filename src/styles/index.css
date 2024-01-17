@@ -1,12 +1,54 @@
+.card{
+    margin:25%;
+    border-style: none;
+    border-radius: 5%;
+    border-color: #E9DCC9;
+    border-style: solid;
+}
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+h2{
+    font-weight: 300;
+    font-size: 55px;
+    color: grey;
+}
+.item{
+    background: #FAF9F6;
+    height: 60px;
+    width: 500px;
+    font-size: 18px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-style: none;
+}
+#tasks{
+    background: #FAF9F6;
+}
+#tasks > div{
+    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+#counter{
+    font-weight: 200;
+    font-style: italic;
+    color: grey;
+}
+.fa-regular {
+    position: absolute;
+    right: 10%;
+    opacity: 0;
+}
+.fa-regular:hover {
+    font-weight: 400;
+    opacity: 1;
+    color: #b51a00;
+}
+.counter{
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-style: none;
+    height: 40px;
+}
